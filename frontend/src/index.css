@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --landing: #faf6f0;
+  --landing-glow: #d4a373;
+  --background: #fdfbf7;
+  --foreground: #2c3332;
+  --card: #ffffff;
+  --card-foreground: #2c3332;
+  --popover: #fdfbf7;
+  --popover-foreground: #2c3332;
+  --primary: #5a9e8f;
+  --primary-foreground: #ffffff;
+  --secondary: #e9e5dd;
+  --secondary-foreground: #2c3332;
+  --muted: #f3f1ed;
+  --muted-foreground: #7a8281;
+  --accent: #ddeae6;
+  --accent-foreground: #3b6e63;
+  --destructive: #c56d6d;
+  --destructive-foreground: #ffffff;
+  --border: #e5e1d8;
+  --input: #e5e1d8;
+  --ring: #5a9e8f;
+  --chart-1: #5a9e8f;
+  --chart-2: #8eb8af;
+  --chart-3: #d4a373;
+  --chart-4: #e9edc9;
+  --chart-5: #ccd5ae;
+  --sidebar: #f9f7f2;
+  --sidebar-foreground: #3e4745;
+  --sidebar-primary: #5a9e8f;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #e9e5dd;
+  --sidebar-accent-foreground: #5a9e8f;
+  --sidebar-border: #e5e1d8;
+  --sidebar-ring: #5a9e8f;
+  --font-display: Fredoka, system-ui, sans-serif;
+  --font-sans: Geist, system-ui, sans-serif;
+  --font-serif: Noto Serif Georgian, serif;
+  --font-mono: JetBrains Mono, monospace;
+  --radius: 1rem;
+  --shadow-x: 0px;
+  --shadow-y: 8px;
+  --shadow-blur: 32px;
+  --shadow-spread: 0px;
+  --shadow-opacity: 0.04;
+  --shadow-color: #2c3332;
+  --shadow-2xs: 0px 8px 32px 0px hsl(171.4286 7.3684% 18.6275% / 0.02);
+  --shadow-xs: 0px 8px 32px 0px hsl(171.4286 7.3684% 18.6275% / 0.02);
+  --shadow-sm:
+    0px 8px 32px 0px hsl(171.4286 7.3684% 18.6275% / 0.04),
+    0px 1px 2px -1px hsl(171.4286 7.3684% 18.6275% / 0.04);
+  --shadow:
+    0px 8px 32px 0px hsl(171.4286 7.3684% 18.6275% / 0.04),
+    0px 1px 2px -1px hsl(171.4286 7.3684% 18.6275% / 0.04);
+  --shadow-md:
+    0px 8px 32px 0px hsl(171.4286 7.3684% 18.6275% / 0.04),
+    0px 2px 4px -1px hsl(171.4286 7.3684% 18.6275% / 0.04);
+  --shadow-lg:
+    0px 8px 32px 0px hsl(171.4286 7.3684% 18.6275% / 0.04),
+    0px 4px 6px -1px hsl(171.4286 7.3684% 18.6275% / 0.04);
+  --shadow-xl:
+    0px 8px 32px 0px hsl(171.4286 7.3684% 18.6275% / 0.04),
+    0px 8px 10px -1px hsl(171.4286 7.3684% 18.6275% / 0.04);
+  --shadow-2xl: 0px 8px 32px 0px hsl(171.4286 7.3684% 18.6275% / 0.1);
+  --tracking-normal: 0.01em;
+  --spacing: 0.25rem;
+}
+
+.dark {
+  --landing: #151a24;
+  --landing-glow: #d97706;
+  --background: #1a1f2b;
+  --foreground: #fdfbf7;
+  --card: #242b3a;
+  --card-foreground: #fdfbf7;
+  --popover: #242b3a;
+  --popover-foreground: #fdfbf7;
+  --primary: #5a9e8f;
+  --primary-foreground: #fdfbf7;
+  --secondary: #2f384b;
+  --secondary-foreground: #fdfbf7;
+  --muted: #2f384b;
+  --muted-foreground: #8895a5;
+  --accent: #3d4f5e;
+  --accent-foreground: #5a9e8f;
+  --destructive: #991b1b;
+  --destructive-foreground: #fdfbf7;
+  --border: #2f384b;
+  --input: #2f384b;
+  --ring: #5a9e8f;
+  --chart-1: #5a9e8f;
+  --chart-2: #4c6b8a;
+  --chart-3: #d97706;
+  --chart-4: #7c3aed;
+  --chart-5: #db2777;
+  --sidebar: #161b25;
+  --sidebar-foreground: #ced4da;
+  --sidebar-primary: #5a9e8f;
+  --sidebar-primary-foreground: #fdfbf7;
+  --sidebar-accent: #242b3a;
+  --sidebar-accent-foreground: #5a9e8f;
+  --sidebar-border: #2f384b;
+  --sidebar-ring: #5a9e8f;
+  --font-display: Fredoka, system-ui, sans-serif;
+  --font-sans: Geist, system-ui, sans-serif;
+  --font-serif: Noto Serif Georgian, serif;
+  --font-mono: JetBrains Mono, monospace;
+  --radius: 1rem;
+  --shadow-x: 0px;
+  --shadow-y: 12px;
+  --shadow-blur: 40px;
+  --shadow-spread: 0px;
+  --shadow-opacity: 0.3;
+  --shadow-color: #000000;
+  --shadow-2xs: 0px 12px 40px 0px hsl(0 0% 0% / 0.15);
+  --shadow-xs: 0px 12px 40px 0px hsl(0 0% 0% / 0.15);
+  --shadow-sm:
+    0px 12px 40px 0px hsl(0 0% 0% / 0.3), 0px 1px 2px -1px hsl(0 0% 0% / 0.3);
+  --shadow:
+    0px 12px 40px 0px hsl(0 0% 0% / 0.3), 0px 1px 2px -1px hsl(0 0% 0% / 0.3);
+  --shadow-md:
+    0px 12px 40px 0px hsl(0 0% 0% / 0.3), 0px 2px 4px -1px hsl(0 0% 0% / 0.3);
+  --shadow-lg:
+    0px 12px 40px 0px hsl(0 0% 0% / 0.3), 0px 4px 6px -1px hsl(0 0% 0% / 0.3);
+  --shadow-xl:
+    0px 12px 40px 0px hsl(0 0% 0% / 0.3), 0px 8px 10px -1px hsl(0 0% 0% / 0.3);
+  --shadow-2xl: 0px 12px 40px 0px hsl(0 0% 0% / 0.75);
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+body {
+  letter-spacing: var(--tracking-normal);
+}
